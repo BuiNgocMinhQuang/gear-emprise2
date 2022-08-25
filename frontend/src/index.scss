@@ -1,0 +1,235 @@
+@import "~bootstrap/scss/bootstrap";
+// @import "./scss/mixins";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// html {
+//   font-size: 62.5%;
+// }
+// body {
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   background: #1e1f24;
+// }
+:root {
+  --primary: #cc181e;
+  --black: #000;
+  --white: #fff;
+  a {
+    text-decoration: none;
+  }
+  width: 100%;
+}
+// header {
+//   width: 100%;
+// }
+
+// // .wrapper {
+// //   background-color: #1e1f24;
+// //   height: 90px;
+// //   display: flex;
+// //   align-items: center;
+// //   padding: 0 150px;
+
+// //   ul {
+// //     display: flex;
+// //     padding-left: 110px;
+// //     li {
+// //       color: var(--white);
+// //       list-style: none;
+// //       font-size: 16px;
+// //       font-weight: 600;
+// //       padding-right: 90px;
+// //       cursor: pointer;
+// //       &:hover {
+// //       }
+// //     }
+// //   }
+// //   .action {
+// //     width: 100%;
+// //     color: var(--white);
+// //     display: flex;
+// //     flex: 1;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     a {
+// //       color: var(--white);
+// //     }
+
+// //     .action-icon {
+// //       height: 23px;
+// //       width: 23px;
+// //       cursor: pointer;
+// //     }
+// //     .login-text {
+// //       font-size: 20px;
+// //       font-weight: 600;
+// //       padding-left: 5px;
+// //       cursor: pointer;
+// //     }
+// //   }
+// // }
+// .red-line {
+//   width: 100%;
+//   height: 15px;
+//   background-color: var(--primary);
+// }
+// .products {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+// .product {
+//   border: 1px #222222 solid;
+//   border-radius: 5px;
+//   margin: 1rem;
+//   background-color: #111111;
+//   max-width: 270px;
+//   min-height: 400px;
+//   max-height: 500px;
+//   color: var(--white);
+//   cursor: pointer;
+//   &:hover {
+//     background-color: var(--white);
+//     color: var(--black);
+//     border: 1px #fff solid;
+//     img {
+//       transform: scale(1.2);
+//     }
+//     .product-info {
+//       a {
+//         color: var(--black);
+//       }
+//     }
+//     .product-price {
+//       color: var(--black);
+//     }
+//   }
+//   img {
+//     transform: scale(1);
+
+//     transition: 0.3s ease-in-out;
+//   }
+//   .product-info {
+//     color: var(--white);
+//     font-weight: 600;
+//     padding: 5px 20px;
+//     a {
+//       text-decoration: none;
+//       color: var(--white);
+//       .product-name {
+//         font-size: 16px;
+//         max-width: 100%;
+//       }
+//     }
+//     .product-des {
+//       padding: 10px 15px;
+//       li {
+//         padding: 2px 0;
+//         line-height: 1.5rem;
+//         color: #b0b1b6;
+//       }
+//     }
+//     .bottom-product {
+//       display: flex;
+//       justify-content: space-between;
+//       padding-bottom: 10px;
+//       .product-price {
+//         font-size: 14px;
+//       }
+//       .add-to-cart {
+//         text-transform: uppercase;
+//         font-size: 8px;
+//         border-radius: 3px;
+//         text-align: center;
+//         background: var(--primary);
+//         border: none;
+//         font-weight: 800;
+//         width: 80px;
+//         height: 20px;
+//         cursor: pointer;
+//         &:hover {
+//           background: #e71919;
+//         }
+//       }
+//     }
+//   }
+// }
+// .product img {
+//   width: 100%;
+// }
+
+// //bắt đầu scss của image-bottom trang home
+
+// .image-home {
+//   position: relative;
+//   width: 100%;
+//   img {
+//     width: 100%;
+//   }
+//   .content {
+//     position: absolute;
+//     z-index: 2;
+//     top: 80px;
+//     left: 80px;
+//     max-width: 300px;
+
+//     color: #fff;
+//     h1 {
+//       padding-bottom: 20px;
+//     }
+//     p {
+//       font-size: 14px;
+//       padding-bottom: 20px;
+//     }
+//   }
+// }
+// @include respond(tab-port) {
+//   .image-home {
+//     img {
+//       height: 80%;
+//     }
+//     .content {
+//       top: 50px;
+//       left: 50px;
+//       max-width: 200px;
+
+//       h1 {
+//         font-size: 14px;
+//         padding-bottom: 15px;
+//       }
+//       p {
+//         font-size: 12px;
+//         padding-bottom: 15px;
+//       }
+//     }
+//   }
+// }
+// @include respond(phone) {
+//   .image-home {
+//     img {
+//       height: 80%;
+//     }
+//     .content {
+//       top: 20px;
+//       left: 20px;
+//       max-width: 150px;
+
+//       h1 {
+//         font-size: 10px;
+//         padding-bottom: 10px;
+//       }
+//       p {
+//         font-size: 8px;
+//         padding-bottom: 10px;
+//       }
+//     }
+//   }
+// }
+// //kết thúc scss của image-bottom trang home

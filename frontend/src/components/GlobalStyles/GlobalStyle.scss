@@ -1,0 +1,193 @@
+@import "../../components/GlobalStyles/mixin.scss";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+//Font
+@font-face {
+  font-family: Roboto-R;
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto-M;
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Roboto-B;
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Roboto-I;
+  src: url("../../assets/fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: Roboto-T;
+  src: url("../../assets/fonts/Roboto-Thin.ttf");
+}
+
+.container-default {
+  padding: 0 50px;
+}
+@include respond(phone) {
+  .container-default {
+    padding: 0 20px;
+  }
+}
+.btn-shopnow {
+  font-family: "Roboto-B", sans-serif;
+  width: 120px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  &:hover {
+    background-color: #ffbb33;
+    color: #000;
+    border: 2px solid #fff;
+  }
+}
+@include respond(tab-port) {
+  .btn-shopnow {
+    width: 80px;
+    font-size: 8px;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+}
+@include respond(phone) {
+  .btn-shopnow {
+    width: 60px;
+    font-size: 6px;
+    padding: 3px 0;
+  }
+}

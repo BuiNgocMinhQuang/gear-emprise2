@@ -1,0 +1,64 @@
+@import "../../../components/GlobalStyles/mixin.scss";
+.carousel-caption {
+  right: 50%;
+  left: 12%;
+  top: 30%;
+  bottom: 1.25rem;
+  display: block;
+  color: #fff;
+  text-align: left;
+  max-width: 360px;
+  font-family: "Roboto-R", sans-serif;
+  .title-banner {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: "Roboto-B", sans-serif;
+  }
+  .des-banner {
+    line-height: 1.5;
+    font-size: 13px;
+    margin-bottom: 15px;
+    max-width: 320px;
+  }
+}
+
+@include respond(tab-port) {
+  .carousel-caption {
+    font-size: 8px;
+    max-width: 280px;
+    .title-banner {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+    .des-banner {
+      margin-bottom: 15px;
+      font-size: 8px;
+      max-width: 250px;
+    }
+  }
+}
+
+@include respond(phone) {
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-caption {
+    right: 50%;
+    left: 15%;
+    top: 15%;
+    font-size: 8px;
+    max-width: 120px;
+    .title-banner {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 10px;
+    }
+    .des-banner {
+      margin-bottom: 10px;
+      font-size: 6px;
+      max-width: 230px;
+    }
+  }
+}

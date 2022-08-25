@@ -1,0 +1,63 @@
+@import "../../../components/GlobalStyles/mixin.scss";
+.menu-body {
+  padding: 30px 0;
+  background: #1e1f24;
+  font-family: "ProximaNova-B", sans-serif;
+  .menu-line-1,
+  .menu-line-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item-menu-body {
+      text-align: center;
+      img {
+        width: 100%;
+      }
+      p {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+@include respond(tab-port) {
+  .menu-body {
+    padding: 20px 0;
+    .menu-line-1,
+    .menu-line-2 {
+      .item-menu-body {
+        img {
+          width: 70%;
+          height: 70%;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .menu-body {
+    padding: 10px 0;
+    .menu-line-1,
+    .menu-line-2 {
+      .item-menu-body {
+        img {
+          width: 50%;
+          height: 50%;
+        }
+        p {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 10px;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

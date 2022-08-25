@@ -1,0 +1,231 @@
+@import "../../../components/GlobalStyles/mixin.scss";
+.review {
+  display: flex;
+  width: 100%;
+  .left-review {
+    width: 50%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      max-width: 420px;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+      z-index: 2;
+      color: #fff;
+      h1 {
+        color: #716e6e;
+      }
+      .title {
+        color: #0bdcce;
+        font-size: 16px;
+      }
+      .desl {
+        font-size: 14px;
+      }
+    }
+    .btn-left-review {
+      position: absolute;
+      display: flex;
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+      align-items: center;
+      .more-review {
+        font-weight: 600;
+        text-decoration: none;
+        padding-left: 50px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+  .right-review {
+    position: relative;
+    width: 50%;
+    background: #fff;
+    color: #000;
+    .carousel {
+      position: unset;
+      max-width: 450px;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+    .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 30px;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      opacity: 1;
+      margin-right: 15%;
+      margin-bottom: 1rem;
+      margin-left: 15%;
+      list-style: none;
+      button {
+        z-index: 5;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #666666;
+      }
+    }
+    .testimonials {
+      color: #716e6e;
+      padding-bottom: 10px;
+    }
+    .title {
+      color: red;
+      height: 100%;
+      padding-bottom: 10px;
+    }
+    .des {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+    .more-test {
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: red;
+      .action-icon {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@include respond(tab-port) {
+  .review {
+    max-height: 250px;
+    .left-review {
+      img {
+        max-height: 250px;
+      }
+      .content {
+        max-width: 350px;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        h1 {
+          color: #716e6e;
+          font-size: 16px;
+        }
+        h2 {
+          font-size: 16px;
+        }
+        .title {
+          color: #0bdcce;
+          font-size: 12px;
+        }
+        .desl {
+          font-size: 10px;
+        }
+      }
+    }
+    .right-review {
+      .carousel {
+        position: unset;
+        max-width: 350px;
+        padding-top: 30px;
+        padding-left: 30px;
+      }
+      .carousel-indicators {
+        list-style: none;
+        button {
+          z-index: 5;
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: #666666;
+        }
+      }
+      .testimonials,
+      .title {
+        font-size: 16px;
+      }
+      .des {
+        font-size: 10px;
+        padding-bottom: 10px;
+      }
+      .more-test {
+        display: none;
+        .action-icon {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .review {
+    max-height: 150px;
+    .left-review {
+      img {
+        max-height: 150px;
+      }
+      .content {
+        max-width: 150px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        h1 {
+          color: #716e6e;
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 12px;
+        }
+        .title {
+          color: #0bdcce;
+          font-size: 10px;
+        }
+        .desl {
+          font-size: 6px;
+        }
+      }
+      .btn-left-review {
+        display: none;
+      }
+    }
+    .right-review {
+      .carousel {
+        position: unset;
+        max-width: 160px;
+        padding-top: 15px;
+        padding-left: 15px;
+      }
+      .carousel-indicators {
+        bottom: -10px;
+        button {
+          z-index: 5;
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          background-color: #666666;
+        }
+      }
+      .testimonials,
+      .title {
+        font-size: 12px;
+        padding-bottom: 0;
+      }
+      .des {
+        font-size: 8px;
+        padding-bottom: 5px;
+      }
+      .more-test {
+        display: none;
+        .action-icon {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
